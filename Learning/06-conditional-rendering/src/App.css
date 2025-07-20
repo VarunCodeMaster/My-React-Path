@@ -1,0 +1,58 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.container{
+  width: 100%;
+  padding: auto;
+  margin: 0;
+}
+
+.title{
+  font-size: 30px;
+  color: crimson;
+}
+
+.input-field{
+  width: 80%;
+  height: 40px;
+  border: 1px solid coral;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+
+}
+
+.add-btn{
+  background-color: lightgreen;
+  padding: 15px;
+  border: none;
+  border-radius: 15px;
+  margin-right: 15px;
+  text-align: center;
+}
+
+.clear-btn{
+  background-color: rgb(229, 81, 81);
+  padding: 15px;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.no-task{
+  color: red;
+  font-size: 20px;
+}
+
+.task-list{
+  list-style-type: none;
+}
+
+.task-list li{
+  font-size: 20px;
+  padding: 10px;
+}

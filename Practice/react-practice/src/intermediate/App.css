@@ -1,0 +1,17 @@
+.heading{
+  text-align: center;
+  font-size: 30px;
+  color: lightcoral;
+}
+
+.like-btn{
+  padding: 20px;
+  background-color: lightgreen;
+  margin-right: 10px;
+}
+
+.dislike-btn{
+  padding: 20px;
+  background-color: lightsalmon;
+  margin-left: 10px;
+}

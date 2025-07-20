@@ -1,0 +1,46 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.onclick-btn{
+  padding: 20px;
+  color: crimson;
+  border: none;
+  border-radius: 20px;
+}
+
+.text-display{
+  color: darkorange;
+  font-size: 30px;
+}
+
+.text-msg{
+  width: 80%;
+  height: 30px;
+  border: 2px solid coral;
+  border-radius: 10px;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-element{
+  margin: 15px;
+  width: 100%;
+  height: 30px;
+  border: 2px solid lightcoral;
+}
+
+.submit-btn{
+  padding: 15px;
+  border-radius: 15px;
+  background-color: darkgoldenrod;
+  color: white;
+}

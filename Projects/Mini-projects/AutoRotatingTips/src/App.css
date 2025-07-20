@@ -1,0 +1,59 @@
+#root{
+  max-width: 1200px;
+  width: 40%;
+  margin: auto;
+}
+
+.fade{
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.container{
+  background-color: lemonchiffon;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title{
+  color: crimson;
+  font-size: 35px;
+  margin: 0;
+}
+
+.prev-btn{
+  padding: 18px;
+  background-color: lightgreen;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  margin-right: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.prev-btn:hover{
+  transform: translateX(-15px);
+}
+
+.next-btn{
+  padding: 18px;
+  background-color: rgb(236, 99, 99);
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.next-btn:hover{
+  transform: translateX(15px);
+}
