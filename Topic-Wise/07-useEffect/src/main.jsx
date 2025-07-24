@@ -1,10 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import CountdownTimer from './Exercises/exercise03.jsx'
+import DarkMode from './Exercises/exercise04.jsx'
+import AutoSaveText from './Exercises/exercise05.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <CountdownTimer />
+    <AutoSaveText />
   </StrictMode>,
 )
