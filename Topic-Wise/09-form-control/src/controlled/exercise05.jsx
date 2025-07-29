@@ -12,6 +12,7 @@ function SignUpForm(){
   })
 
   const [submitData, setSubmittedData] = useState(null)
+  const [error, setError] = useState("");
 
   function handleChange(e){
     const {name, value} = e.target;
@@ -24,14 +25,22 @@ function SignUpForm(){
 
   function handleSubmit(e){
     e.preventDefault();
-    setSubmittedData(formData),
-    setFormData({name: "", email: "", password: ""})
+
+    if (!formData.name || !formData.email || !formData.password) {
+      setError("All fields are required!");
+      setSubmittedData(null);
+    } else {
+      setError(""); // clear previous errors
+      setSubmittedData(formData);
+    }
   }
 
   return(
     <div>
     <form onSubmit={handleSubmit}>
       <h2>Signup form</h2>
+
+       {error && <p style={{ color: "red" }}>{error}</p>}
 
       <label>
         Name: 
@@ -67,6 +76,14 @@ function SignUpForm(){
       <br />
 
       <button type="submit">Submit</button>
+
+      <button type="button" onClick={() => {
+        setFormData({ name: "", email: "", password: "" });
+        setError("");
+        setSubmittedData(null);
+      }}>
+  Reset
+</button>
     </form>
 
     {submitData && (

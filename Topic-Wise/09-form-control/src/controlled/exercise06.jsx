@@ -7,7 +7,7 @@ import { useState } from "react";
 function PasswordCheck(){
   const [password, setPassword] = useState("");
 
-  function getStrenght(){
+  function getStrength(){
     if(password.length === 0) return "";
     if(password.length < 6) return "Weak";
     if(password.match(/[a-z]/) && password.match(/[A-Z]/) && password.match(/[0-9]/) && password.match(/[^a-zA-Z0-9]/)) {
@@ -16,7 +16,7 @@ function PasswordCheck(){
     return "Medium"
   }
 
-  const strength = getStrenght(password);
+  const strength = getStrength(password);
 
   const strengthColor = {
     "": "transparent",

@@ -3,10 +3,10 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import LikeButton from './intermediate/exercise03'
 import CarCard from './advanced/exercise02'
-import Rating from './events/exercise08'
+import BasicForm from './beginner/exercise06'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   <Rating />
+   <BasicForm />
   </StrictMode>,
 )
