@@ -2,29 +2,32 @@
 // Problem: Sync Two Inputs
 // Create two components: FirstNameInput and LastNameInput.
 
-import { useState } from "react"
+import { useState } from "react";
 
-function SyncInputs(){
-  const [firstNameInput, setfirstNameInput] = useState("");
-  const [lastNameInput, setLastNameInput] = useState("")
+function SyncInputs() {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
 
-  return(
-    <>
-      <h2>full Name: {firstNameInput} {lastNameInput}</h2>
-      <firstNameInput firstNameInput={firstNameInput} setfirstNameInput={setfirstNameInput} />
-      <lastNameInput lastNameInput={lastNameInput} setLastNameInput={setLastNameInput} />
-    </>
-  )
+  document.title = "Name of the User";
+
+  return (
+    <div>
+      <h2>Full Name: {firstName} {lastName}</h2>
+      <FirstNameInput firstName={firstName} setFirstName={setFirstName} />
+      <LastNameInput lastName={lastName} setLastName={setLastName} />
+    </div>
+  );
 }
 
-function PersonA({firstNameInput, setFirstNameInput}){
-  return( 
-  <input 
-  type="text" 
-  placeholder="Enter you first name..."
-  value={firstNameInput}
-  />
-  )
+function FirstNameInput({ firstName, setFirstName }) {
+  return (
+    <input
+      type="text"
+      placeholder="First Name"
+      value={firstName}
+      onChange={(e) => setFirstName(e.target.value)}
+    />
+  );
 }
 
 function LastNameInput({ lastName, setLastName }) {
@@ -37,3 +40,5 @@ function LastNameInput({ lastName, setLastName }) {
     />
   );
 }
+
+export default SyncInputs;
