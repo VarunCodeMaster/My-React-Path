@@ -4,6 +4,7 @@
 
 import { useState } from "react";
 
+// Parent Component
 function SyncInputs() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -19,6 +20,7 @@ function SyncInputs() {
   );
 }
 
+// Child 1 Component
 function FirstNameInput({ firstName, setFirstName }) {
   return (
     <input
@@ -30,6 +32,7 @@ function FirstNameInput({ firstName, setFirstName }) {
   );
 }
 
+// Child 2 Component
 function LastNameInput({ lastName, setLastName }) {
   return (
     <input
